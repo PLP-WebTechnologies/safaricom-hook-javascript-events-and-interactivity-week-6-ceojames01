@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/interactive.css">
+  </head>
+  <body>
+    <h1>Interactive Elements</h1>
+
+    <button id="colorButton">Toggle Background Color</button>
+
+    <p id="myParagraph">This is a paragraph that will change size.</p>
+    <input type="range" id="fontSizeSlider" min="12" max="36" value="16" />
+     
+    <br><br>
+    <button id="openModalBtn">Open Modal</button>
+
+    <div id="myModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>This is the modal content.</p>
+      </div>
+    </div>
+
+    <h2>Form with Validation</h2>
+    <form id="myForm">
+      Name: <input type="text" id="name" required /><span
+        id="nameError"
+        class="error"
+      ></span
+      ><br /><br />
+      Email: <input type="email" id="email" required /><span
+        id="emailError"
+        class="error"
+      ></span
+      ><br /><br />
+      Password: <input type="password" id="password" required /><span
+        id="passwordError"
+        class="error"
+      ></span
+      ><br /><br />
+
+      <select id="mySelect">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <span id="selectMessage"></span>
+
+    <script src="interactive.js"></script>
+  </body>
+</html>
